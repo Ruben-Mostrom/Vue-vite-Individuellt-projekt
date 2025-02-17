@@ -1,8 +1,9 @@
 <template>
   <div>
-    <input v-model="inputVerse" placeholder="search for a bibleverse" />
+    <h1>search for a bibleverse</h1>
+    <input v-model="inputVerse" placeholder="Exemple Mark 1:32" />
     <input type="button" @click="fetchBibleVerse" value="search" />
-    <div v-if="result !== null">
+    <div class="verses" v-if="result !== null">
       <VerseComponent
         v-for="(verseItem, index) in result.verses"
         :key="index"

@@ -16,4 +16,19 @@
   </main>
 </template>
 
-<style scoped></style>
+<style scoped>
+nav > ul {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  list-style-type: none;
+  justify-content: center;
+  padding: 0;
+}
+
+nav li {
+  background-color: brown;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+</style>

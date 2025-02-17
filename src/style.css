@@ -15,11 +15,11 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: #ffffff;
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+  color: #868686;
 }
 
 body {
@@ -28,6 +28,8 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background-image: url(../public/scroll.png);
+  background-size: cover;
 }
 
 h1 {
@@ -63,6 +65,12 @@ button:focus-visible {
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+}
+
+.verses {
+  height: 36rem;
+  width: 50rem;
+  overflow-y: auto;
 }
 
 @media (prefers-color-scheme: light) {

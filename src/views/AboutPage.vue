@@ -2,8 +2,8 @@
   <div>
     <h1>Random bible verse</h1>
     <!-- knapp som hämtar från fetch funktionen -->
-    <input type="button" @click="fetchRandomVerse" value="random bible verse" />
-    <!-- Kompunänten ränderas ifall vi har fått ett resultat -->
+    <input type="button" @click="fetchRandomVerse" value="Inspire Me" />
+    <!-- Kompunänten renderas ifall vi har fått ett resultat -->
     <div class="verses" v-if="result !== null">
       <RandomVerseComponent
         :book="result.random_verse.book"
@@ -20,6 +20,7 @@ import axios from 'axios'
 import { ref } from 'vue'
 import RandomVerseComponent from '../components/RandomVerseComponent.vue'
 
+//skapar en reaktiv variable
 const result = ref(null)
 
 //function som fetchar api från bibelverses

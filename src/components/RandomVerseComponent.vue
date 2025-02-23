@@ -9,9 +9,9 @@ defineProps({
 
 <template>
   <div class="verse-container">
-    <h1 v-if="book && chapter && verse">
+    <h2 v-if="book && chapter && verse">
       {{ book }} {{ chapter }}:{{ verse }}
-    </h1>
+    </h2>
     <p v-if="text">{{ text }}</p>
   </div>
 </template>

@@ -10,7 +10,7 @@ watchEffect(() => {
 
 <template>
   <div class="verse-container">
-    <h1 v-if="verse">{{ verse }}</h1>
+    <h2 v-if="verse">{{ verse }}</h2>
     <p v-if="text">{{ text }}</p>
   </div>
 </template>
